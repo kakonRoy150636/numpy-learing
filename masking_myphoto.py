@@ -1,9 +1,9 @@
 import cv2
 import numpy as np
 
-image = cv2.imread('/home/kakon/Downloads/parkinson dieses/Pasted image.png',cv2.IMREAD_GRAYSCALE)
+image = cv2.imread('/home/kakon/Downloads/parkinson dieses/Pasted image.png')
 
-dark_mask = image < 50
+dark_mask = image < 100
 dark_pixel = image[dark_mask]
 
 print(f"pixel number:{len(dark_pixel)}")
